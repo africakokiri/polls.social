@@ -1,3 +1,4 @@
+import { Header } from "@/components/header";
 import NextThemesProvider from "@/libs/next-themes/next-themes-provider";
 import "@/styles/globals.css";
 
@@ -18,7 +19,10 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="h-screen w-screen antialiased">
-        <NextThemesProvider>{children}</NextThemesProvider>
+        <NextThemesProvider>
+          <Header />
+          {children}
+        </NextThemesProvider>
       </body>
     </html>
   );
