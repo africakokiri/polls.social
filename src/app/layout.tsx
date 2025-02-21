@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="h-screen w-screen antialiased">
+      <body className="antialiased">
         <NextThemesProvider>
           <Header />
           {children}

@@ -1,3 +1,11 @@
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarTrigger
+} from "@/components/ui/menubar";
+
 import { AlignJustifyIcon, VoteIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -17,9 +25,16 @@ export const Header = () => {
           <p className="font-bold">Polls</p>
         </Link>
       </div>
-      <div>
-        <AlignJustifyIcon />
-      </div>
+      <Menubar className="border-none">
+        <MenubarMenu>
+          <MenubarTrigger>
+            <AlignJustifyIcon strokeWidth={1.5} />
+          </MenubarTrigger>
+          <MenubarContent className="relative right-5">
+            <MenubarItem>로그인</MenubarItem>
+          </MenubarContent>
+        </MenubarMenu>
+      </Menubar>
     </header>
   );
 };
