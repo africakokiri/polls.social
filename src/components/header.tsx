@@ -31,9 +31,9 @@ export const Header = () => {
           <MenubarTrigger>
             <AlignJustifyIcon strokeWidth={1.5} />
           </MenubarTrigger>
-          <MenubarContent className="relative right-5 space-y-2">
+          <MenubarContent className="relative right-5 w-[240px] space-y-2">
             <MenubarItem
-              className="flex items-center justify-center gap-2
+              className="flex h-[40px] items-center justify-center gap-2
 bg-[#FEE500] text-center"
             >
               <Image
@@ -45,7 +45,7 @@ bg-[#FEE500] text-center"
               <span>카카오 로그인</span>
             </MenubarItem>
             <MenubarItem
-              className="flex items-center justify-center gap-2
+              className="flex h-[40px] items-center justify-center gap-2
 bg-[#F2F2F2] text-center"
             >
               <Image
