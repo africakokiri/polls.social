@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/menubar";
 
 import { AlignJustifyIcon, VoteIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export const Header = () => {
@@ -30,8 +31,31 @@ export const Header = () => {
           <MenubarTrigger>
             <AlignJustifyIcon strokeWidth={1.5} />
           </MenubarTrigger>
-          <MenubarContent className="relative right-5">
-            <MenubarItem>로그인</MenubarItem>
+          <MenubarContent className="relative right-5 space-y-2">
+            <MenubarItem
+              className="flex items-center justify-center gap-2
+bg-[#FEE500] text-center"
+            >
+              <Image
+                src="/logo/kakao.svg"
+                alt=""
+                width={16}
+                height={16}
+              />
+              <span>카카오 로그인</span>
+            </MenubarItem>
+            <MenubarItem
+              className="flex items-center justify-center gap-2
+bg-[#F2F2F2] text-center"
+            >
+              <Image
+                src="/logo/google.svg"
+                alt=""
+                width={16}
+                height={16}
+              />
+              <span>구글 로그인</span>
+            </MenubarItem>
           </MenubarContent>
         </MenubarMenu>
       </Menubar>
